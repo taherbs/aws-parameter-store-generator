@@ -1,0 +1,13 @@
+aws:
+  region: eu-west-1
+  overwrite_param: false # Set this to true if you want to overwrite existing parameters
+parameters: # parameters list  - allowed params type are 'String'|'StringList'|'SecureString'
+  - name: /test/1
+    type: String
+    value: test
+  - name: /test/2
+    type: StringList
+    value: test2.0,test2.1,test2.2
+  - name: /test/3
+    type: SecureString
+    value: test3
