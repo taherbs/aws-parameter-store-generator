@@ -14,6 +14,9 @@ pip3 install -r requirements.txt
 * Create your params.yaml file, use [params.yaml.template](./params.yaml.template) as a template
 * Run the below command:
 ```bash
+# Read the params prefixed with the specifued value
+python3 parameter_store_cli.py read /PARAM_PREFIX/ | python -m json.tool
+
 # Create the params listed in the params.yaml file
 python3 parameter_store_cli.py create
 
