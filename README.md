@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 * Run the below command:
 ```bash
 # Read the params prefixed with the specifued value
-python3 parameter_store_cli.py read /PARAM_PREFIX/ | python -m json.tool
+python3 parameter_store_cli.py read --prefix=/PARAM_PREFIX/ | python -m json.tool
 
 # Create the params listed in the params.yaml file
 python3 parameter_store_cli.py create
